@@ -2,7 +2,6 @@
 
 import mechanize
 import time
-import sys
 import cookielib
 
 #Account user/pass dyndns:
@@ -33,7 +32,6 @@ br.submit()
 
 #Throw output into string
 html = br.response().read()
-#print html
 
 if "Welcome" in str(html):
 	print "Login succesful, waiting 5 seconds to logout..."
@@ -42,5 +40,5 @@ if "Welcome" in str(html):
 	#print br.response().read()
 else:
     print "ERROR: Unable to login"
-exit()
+
 	
