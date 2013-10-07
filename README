@@ -1,0 +1,4 @@
+Small python script to automatically login into DynDns.  
+
+Requires mechanize
+
