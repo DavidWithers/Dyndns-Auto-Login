@@ -37,7 +37,6 @@ if "Welcome" in str(html):
 	print "Login succesful, waiting 5 seconds to logout..."
 	time.sleep(5)
 	r = br.open("https://account.dyn.com/entrance/?__logout=1")
-	#print br.response().read()
 else:
     print "ERROR: Unable to login"
 
